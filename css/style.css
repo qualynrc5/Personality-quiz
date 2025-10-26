@@ -1,6 +1,153 @@
-.selected {
-    background-color: #007bff;
-    color: white;
-    border-color: #007bff;
+/* Fun colorful gradient background */
+body {
+  background: linear-gradient(135deg, #ffdf6b, #ff6b6b, #6bc5ff, #7bff6b);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  font-family: "Poppins", sans-serif;
 }
-  
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Card Styling */
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Button Colors */
+.btn-red { background-color: #ff4b4b; color: white; }
+.btn-blue { background-color: #4b7bff; color: white; }
+.btn-yellow { background-color: #ffcf4b; color: black; }
+.btn-green { background-color: #4bff76; color: black; }
+.btn-purple { background-color: #a020f0; color: white; }
+
+/* Darker highlight when selected */
+.answer-btn.selected.btn-red { background-color: #cc0000 !important; }
+.answer-btn.selected.btn-blue { background-color: #0033cc !important; }
+.answer-btn.selected.btn-yellow { background-color: #e6b800 !important; color: white; }
+.answer-btn.selected.btn-green { background-color: #009933 !important; color: white; }
+.answer-btn.selected.btn-purple { background-color: #5a0099 !important; }
+
+/* Center content spacing */
+h1 {
+  color: white;
+  text-shadow: 1px 1px 3px #333;
+}
+
+#result-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  text-align: center;
+}
+
+/* Header styling */
+.site-header {
+  display: flex;
+  flex-direction: column; /* stacks logo above title */
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Logo styling */
+.logo {
+  width: 200px;  /* adjust size as needed */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* 1️⃣ Make the logo bigger */
+.site-header .logo {
+  width: 200px; /* adjust as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto; /* center the logo with some bottom spacing */
+}
+
+/* 2️⃣ Style the button categories container */
+.question-block {
+  background-color: #FFD8A6; /* light orange */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Optional: Style buttons for better spacing */
+.answer-btn {
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  font-weight: 500;
+}
+
+/* Optional: Make the Show Results button a bit larger */
+#show-result {
+  padding: 12px 0;
+  font-size: 1.1rem;
+}
+* Style answer buttons with fun font and colors */
+.answer-btn {
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  font-weight: 700;
+  font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+  text-transform: uppercase; /* makes them bold and comic-style */
+  border-radius: 8px;
+  box-shadow: 2px 2px #888888; /* gives a comic-like 3D effect */
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+/* Hover effect for buttons */
+.answer-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px #666666;
+}
+
+/* 4️⃣ Show Results button cartoon style */
+#show-result {
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+  text-transform: uppercase;
+  box-shadow: 3px 3px #888888;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+#show-result:hover {
+  transform: translateY(-2px);
+  box-shadow: 5px 5px #666666;
+}
+
+/* 5️⃣ Results box style (blue background + cartoon font) */
+#result-container {
+  background-color: #87CEFA; 
+  border-radius: 10px;
+  padding: 20px;
+  color: #000;
+  text-align: center;
+  font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+}
+
+/* 6️⃣ Titles cartoon style */
+h1, h3, h4 {
+  font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #FF4500; 
+  text-shadow: 2px 2px #FFD700; 
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #FF6347; 
+  text-shadow: 1px 1px #FFFF00;
+}
+
+h4 {
+  font-size: 1.3rem;
+  color: #1E90FF; 
+  text-shadow: 1px 1px #FFE4B5; 
+}

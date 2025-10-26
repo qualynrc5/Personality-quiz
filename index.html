@@ -1,57 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Personality Quiz</title>
-    <link rel="icon" type="image/x-icon" href="/img/ideas.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href ="./css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What Superhero Are You?</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <h1 class="text-center mt-4">YOUR QUIZ TITLE HERE</h1>
-    
-    <!-- Start quiz element -->
-    <div class="container d-flex justify-content-center" id="question-1">
-      <div class="card my-4 p-4 question-block" style="width: 75%;">
-        <h4 class="mb-3">YOUR QUIZ QUESTION HERE</h4>
-        <div class="row g-2">
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">ANSWER CHOICE A</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">ANSWER CHOICE B</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">ANSWER CHOICE C</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">ANSWER CHOICE D</button>
-          </div>
-        </div>
+  <header class="site-header">
+  <img src="./img/superhero-logo.png" alt="Superhero Logo" class="logo">
+  <h1>Superhero Personality Quiz</h1>
+</header>
+
+<body>
+  <!-- Logo -->
+  <div class="text-center my-3">
+  </div>
+
+  <h1 class="text-center mb-4">What Superhero Are You?</h1>
+
+  <!-- Question 1 -->
+  <div class="container d-flex justify-content-center" id="question-1">
+    <div class="card question-block" style="width: 75%;">
+      <h4>1. How would your friends describe you?</h4>
+      <div class="row g-2 my-2">
+        <div class="col-6"><button class="btn btn-red w-100 answer-btn" data-answer="A">Brave</button></div>
+        <div class="col-6"><button class="btn btn-blue w-100 answer-btn" data-answer="B">Smart</button></div>
+        <div class="col-6"><button class="btn btn-yellow w-100 answer-btn" data-answer="C">Funny</button></div>
+        <div class="col-6"><button class="btn btn-green w-100 answer-btn" data-answer="D">Mysterious</button></div>
+        <div class="col-12"><button class="btn btn-purple w-100 answer-btn mt-2" data-answer="E">Energetic</button></div>
       </div>
     </div>
+  </div>
 
-    
-    
-    <!-- End quiz element -->
-
-    <!-- Add more quiz elements here -->
-
-
-
-    <div class="container d-flex justify-content-center">
-      <button id="show-result" class="btn btn-success my-4">Show Results</button>
-    </div>    
-    <!-- Output the result here -->
-    <div class="container d-flex justify-content-center">
-      <div id="result-container" class="card p-4 mb-4" style="width: 75%; display: none;">
-        <h3>Your Result:</h3>
-        <p id="result-text"></p>
+  <!-- Question 2 -->
+  <div class="container d-flex justify-content-center" id="question-2">
+    <div class="card question-block" style="width: 75%;">
+      <h4>2. What's your favorite way to spend a day off?</h4>
+      <div class="row g-2 my-2">
+        <div class="col-6"><button class="btn btn-red w-100 answer-btn" data-answer="A">Outdoor adventure</button></div>
+        <div class="col-6"><button class="btn btn-blue w-100 answer-btn" data-answer="B">Binging Netflix</button></div>
+        <div class="col-6"><button class="btn btn-yellow w-100 answer-btn" data-answer="C">Hanging out with friends</button></div>
+        <div class="col-6"><button class="btn btn-green w-100 answer-btn" data-answer="D">Thinking alone</button></div>
+        <div class="col-12"><button class="btn btn-purple w-100 answer-btn mt-2" data-answer="E">Working on a side project</button></div>
       </div>
     </div>
-    
-    <!-- Connect to your script file here -->
-     <script src = "./js/script.js"></script>
+  </div>
+
+  <!-- Question 3 -->
+  <div class="container d-flex justify-content-center" id="question-3">
+    <div class="card question-block" style="width: 75%;">
+      <h4>3. Pick a superpower you’d want:</h4>
+      <div class="row g-2 my-2">
+        <div class="col-6"><button class="btn btn-red w-100 answer-btn" data-answer="A">Flight</button></div>
+        <div class="col-6"><button class="btn btn-blue w-100 answer-btn" data-answer="B">Super intelligence</button></div>
+        <div class="col-6"><button class="btn btn-yellow w-100 answer-btn" data-answer="C">Invisibility</button></div>
+        <div class="col-6"><button class="btn btn-green w-100 answer-btn" data-answer="D">Magic powers</button></div>
+        <div class="col-12"><button class="btn btn-purple w-100 answer-btn mt-2" data-answer="E">Super speed</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Question 4 -->
+  <div class="container d-flex justify-content-center" id="question-4">
+    <div class="card question-block" style="width: 75%;">
+      <h4>4. What’s your biggest weakness?</h4>
+      <div class="row g-2 my-2">
+        <div class="col-6"><button class="btn btn-red w-100 answer-btn" data-answer="A">Taking too many risks</button></div>
+        <div class="col-6"><button class="btn btn-blue w-100 answer-btn" data-answer="B">Overthinking</button></div>
+        <div class="col-6"><button class="btn btn-yellow w-100 answer-btn" data-answer="C">Caring too much</button></div>
+        <div class="col-6"><button class="btn btn-green w-100 answer-btn" data-answer="D">Being distant</button></div>
+        <div class="col-12"><button class="btn btn-purple w-100 answer-btn mt-2" data-answer="E">Impatience</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Show Results button -->
+  <div class="container d-flex justify-content-center my-3">
+    <button id="show-result" class="btn btn-success w-50">Show Results</button>
+  </div>
+
+  <!-- Result container -->
+  <div class="container d-flex justify-content-center">
+    <div id="result-container" class="card p-4 mb-4" style="width: 75%; display: none;">
+      <h3>Your Result:</h3>
+      <p id="result-text"></p>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="./js/script.js"></script>
 </body>
 </html>
